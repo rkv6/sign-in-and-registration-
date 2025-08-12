@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <h1>Create an account</h1>
+        <p>Already have an account? <span class="text-white">Sign in</span></p>
+    </header>
+    <form action="login.html">
+        <input type="name" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <input type="password" name="password" placeholder="Password" minlength="6">
+        <p>Password must be at least 6 characters</p>
+
+        <div class="gender">
+            <label for="male">
+                <input type="radio" name="gender" id="male" value="male">
+                Male
+            </label>
+            <label for="female">
+                <input type="radio" name="gender" id="female" value="female">
+                    Female
+            </label>
+        </div>
+
+        <select name="hobbies" >
+            <option value="" hidden>Select your hobbies</option>
+            <option value="music">Music</option>
+            <option value="reading">Reading</option>
+            <option value="gaming">Gaming</option>
+            <option value="traveling">Traveling</option>
+            <option value="cooking">Cooking</option>
+            <option value="sports">Sports</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="text" name="" placeholder="City" required>
+        <button type="submit">Sign up</button>
+    </form>
+</body>
+</html>
